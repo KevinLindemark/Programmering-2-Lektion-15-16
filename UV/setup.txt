@@ -1,0 +1,18 @@
+# Alt det her kræver self at man kan forbinde til en pi ...
+# HUSK AT VÆRE PÅ DET SAMME NETVÆRK :D
+
+# Lav et virtual environment
+python -m venv .venv
+
+# Aktivér det nye virtual environment
+source .venv/bin/activate
+
+# hent alle øvelserne ned på Raspberry Pi fra github (requirements.txt ligger i denne mappe)
+git clone https://github.com/KevinLindemark/Programmering-2-Lektion-15-16
+
+# Installér alle pakker der skal bruges (husk at navigere til  eller angive filens placering i terminalen først.)
+pip install -r requirements.txt
+
+# Indsæt i html template filen (i øvelse 3-5) 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
