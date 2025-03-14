@@ -4,7 +4,7 @@ import pigpio
 
 from time import sleep
 
-LED_GPIO_PIN = 17 
+LED_GPIO_PIN = 13
 
 pi = pigpio.pi()
 
@@ -21,7 +21,7 @@ def skru(data):
 
     if lysstyrke > 255:
         lysstyrke = 255
-
+    print(lysstyrke)
     pi.set_PWM_dutycycle(LED_GPIO_PIN, lysstyrke)
 
 @app.route('/', methods=['GET'])
