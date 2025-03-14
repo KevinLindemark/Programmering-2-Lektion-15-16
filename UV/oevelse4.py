@@ -4,7 +4,7 @@ import pigpio
 
 from time import sleep
 
-LED_GPIO_PIN = 17 
+LED_GPIO_PIN = 13
 
 pi = pigpio.pi()
 

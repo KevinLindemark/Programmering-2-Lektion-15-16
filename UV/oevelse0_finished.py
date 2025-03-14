@@ -3,7 +3,7 @@ from time import sleep
 pi = pigpio.pi()
 
 KNAP_GPIO = 4
-LED_GPIO = 17
+LED_GPIO = 13
 
 pi.set_PWM_range(LED_GPIO, 100)
 duty_val = 0

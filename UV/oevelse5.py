@@ -6,7 +6,7 @@ from pigpio_dht import DHT11
 from time import sleep
 import threading
 
-DHT11_PIN = 5
+DHT11_PIN = 19
 sensor = DHT11(DHT11_PIN)
 sidste_temp = None
 
