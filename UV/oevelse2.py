@@ -3,11 +3,9 @@ from flask import redirect
 import pigpio
 
 pi = pigpio.pi()
-
 app = Flask(__name__)
 
-LED_GPIO_PIN = 17 
-
+LED_GPIO_PIN = 13
 
 @app.route('/on')
 def on():
@@ -21,7 +19,7 @@ def off():
 
 @app.route('/')
 def index():
-    return str(pi.read(LED_GPIO_PIN)) + '<a href="/on">Tænd</a><a href="/off">Sluk</a>'
+    return str(pi.read(LED_GPIO_PIN)) + '<a href="/on"> Tænd </a> <a href="/off"> Sluk</a>'
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0", debug=True)

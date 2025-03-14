@@ -7,7 +7,6 @@ LED_GPIO = 13
 
 pi.set_PWM_range(LED_GPIO, 100)
 duty_val = 0
-
 direction = 1
 
 while True:
